@@ -7,7 +7,7 @@
 --- 
 
 GPU programming used to mean wrangling C++ compilers, bloated SDKs, and vendor-specific toolchains.
-That’s changing. You can now write GPU code in modern languages like [Rust-GPU](https://rust-gpu.github.io/) and [Zig](https://ziglang.org) with fewer layers.
+That’s changing. You can now write GPU code in modern languages like [Rust](https://rust-gpu.github.io/) and [Zig](https://ziglang.org) with fewer layers.
 This post walks through the current state of Zig's GPU backends and how they stack up across Vulkan, OpenCL, and native ISAs.
 
 ### SPIR-V, PTX and AMDGCN
@@ -28,7 +28,7 @@ For a complete example, checkout [snektron/shallenge](http://github.com/snektron
 ### Vulkan vs. OpenCL
 
 Today, Vulkan and OpenCL are the two major SPIR-V environments — but they diverge in a few aspects.
-in OpenCL capabilities like `Kernel` and `Addresses` are guaranteed to be available.
+in OpenCL, capabilities like `Kernel` and `Addresses` are guaranteed to be available.
 As a result, pointer arithmetic and casting are permitted.
 Whereas the baseline features for Vulkan and OpenGL environments tend to be more limited.
 This is why when targeting baseline Vulkan 1.2 features, Zig's SPIR-V backend passes about `50%`
