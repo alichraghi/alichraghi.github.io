@@ -13,6 +13,7 @@ a {
 }
 
 p {
+  text-align: justify;
   margin: 5pt 0;
 }
 
@@ -64,13 +65,21 @@ footer hr {
 img {
   display: block;
   margin: auto;
+  max-width: 100%;
 }
 
 pre, code {
+  white-space: pre-wrap;
   font-family: 'JetBrains Mono', monospace;
   font-size: initial;
 }
 
 #pfp {
   height: 100px;
+}
+
+#content {
+  align-self: center;
+  box-sizing: border-box;
+  max-width: min(800px, 100vw);
 }
