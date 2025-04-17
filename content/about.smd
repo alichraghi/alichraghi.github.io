@@ -1,0 +1,15 @@
+---
+.title = "About",
+.date = @date("2025-04-16T00:00:00"),
+.author = "Ali Cheraghi",
+.layout = "page.shtml",
+.draft = false,
+--- 
+
+[]($image.siteAsset('pfp.png').id('pfp'))
+
+Hello, I'm Ali. I write [code](https://github.com/alichraghi/zig) that's usually open-source.
+My interesets are Systems programming, Compilers, GPUs and Optimizing.
+In my free time i like to do hiking, reading and playing video games.
+
+You can reach me out in [email](mailto:alichraghi@proton.me) or by the `alichraghi` username in discord and telegram.

@@ -1,0 +1,32 @@
+:root {
+  --dark-yellow: #d19a66;
+  --green: #abff4b;
+  --comment: #5c6370;
+  --white: #dfdfdf;
+}
+
+code {
+  color: var(--green);
+}
+
+code.zig {
+  color: var(--white);
+}
+
+code.zig .comment {
+  color: var(--comment);
+}
+
+code.zig .keyword,
+code.zig .keyword_import,
+code.zig .keyword_function,
+code.zig .keyword_modifier,
+code.zig .type_builtin,
+code.zig .numeric.constant {
+  color: var(--green);
+}
+
+code.zig .string {
+  color: var(--dark-yellow);
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head id="head">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title :text="$site.title"></title>
+    <link type="text/css" rel="stylesheet" href="$site.asset('style.css').link()">
+    <link type="text/css" rel="stylesheet" href="$site.asset('highlight.css').link()">
+    <!-- mathtex -->
+    <link type="text/css" rel="stylesheet" href="$site.asset('Temml-Local.css').link()">
+    <script defer src="$site.asset('temml.min.js').link()"></script>
+    <script defer src="$site.asset('render-mathtex.js').link()"></script>
+    <!-- /mathtex -->
+    <super>
+  </head>
+  <body id="body">
+    <div id="site-title">
+      <h1 :text="$site.title"></h1>
+    </div>
+    <nav>
+      <a href="$site.page('').link()">Blog</a>
+       &nbsp; • &nbsp;
+      <a href="$site.page('about').link()">About</a>
+    </nav>
+    <super>
+    <footer>
+      <hr>
+      <br>
+      <span>
+        <a href="https://github.com/alichraghi">GitHub</a>
+        -
+        <a href="https://hachyderm.io/@alic">Mastodon</a>
+      </span>
+    </footer>
+  </body>
+</html>

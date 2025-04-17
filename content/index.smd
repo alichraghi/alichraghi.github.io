@@ -1,0 +1,13 @@
+---
+.title = "",
+.date = @date("2025-04-16T00:00:00"),
+.author = "Ali Cheraghi",
+.layout = "index.shtml",
+.alternatives = [{ 
+    .name = "rss",
+    .layout = "index.xml", 
+    .output = "index.xml",
+}],
+.draft = false,
+--- 
+
