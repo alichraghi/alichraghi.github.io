@@ -6,11 +6,11 @@
 //
 // PTX:
 //     zig build-lib -dynamic -target nvptx64-cuda-none -mcpu <gpu-model> \
-//     -femit-asm -fno-allow-shlib-undefined -fno-compiler-rt -fno-ubsan-rt kernel.zig
+//     -femit-asm -fno-compiler-rt kernel.zig
 //
 // AMDGCN:
 //     zig build-lib -dynamic -target amdgcn-amdhsa-none -mcpu <gpu-model> \
-//     -fno-allow-shlib-undefined -fno-compiler-rt -fno-ubsan-rt kernel.zig
+//     -fno-compiler-rt kernel.zig
 //
 
 export fn kernel() callconv(.kernel) void {}
