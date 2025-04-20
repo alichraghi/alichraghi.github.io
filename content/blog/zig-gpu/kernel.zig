@@ -6,7 +6,7 @@
 //
 // PTX:
 //     zig build-lib -dynamic -target nvptx64-cuda-none -mcpu <gpu-model> \
-//     -femit-asm -fno-compiler-rt kernel.zig
+//     -femit-asm -fno-emit-bin -fno-ubsan-rt kernel.zig
 //
 // AMDGCN:
 //     zig build-lib -dynamic -target amdgcn-amdhsa-none -mcpu <gpu-model> \
