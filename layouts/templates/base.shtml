@@ -20,7 +20,9 @@
     </div>
     <nav>
       <a href="$site.page('').link()">Blog</a>
-       &nbsp; • &nbsp;
+      &nbsp; • &nbsp;
+      <a href="$site.page('art').link()">Art</a>
+      &nbsp; • &nbsp;
       <a href="$site.page('about').link()">About</a>
     </nav>
     <super>

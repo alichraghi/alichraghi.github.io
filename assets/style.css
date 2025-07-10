@@ -62,7 +62,7 @@ footer hr {
   width: 100%;
 }
 
-img {
+img, video {
   display: block;
   margin: auto;
   max-width: 100%;

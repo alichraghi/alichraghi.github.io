@@ -1,0 +1,43 @@
+---
+.title = "Art",
+.date = @date("2025-04-16T00:00:00"),
+.author = "Ali Cheraghi",
+.layout = "page.shtml",
+.draft = false,
+---
+
+### King's birthday gift 2
+[]($image.siteAsset('art/king-bd2.jpg').id('king-bd2'))
+
+### Kimia's cat
+[]($image.siteAsset('art/kimia-cat.png').id('kimia-cat'))
+
+### Mohgwyn pixel art
+[]($image.siteAsset('art/mohgwyn.png').id('mohgwyn'))
+
+### Soul of Cinder WIP
+[]($image.siteAsset('art/soul-of-cinder-wip.jpg').id('soul-of-cinder-wip'))
+
+### Profile picture
+[]($image.siteAsset('art/pfp.png').id('pfp'))
+
+### Demon slayer
+[]($image.siteAsset('art/demon-slayer.png').id('demon-slayer'))
+
+### Yuji
+[]($image.siteAsset('art/yuji.jpg').id('yuji'))
+
+### King's birthday gift 1
+[]($image.siteAsset('art/king-bd1.png').id('king-bd1'))
+
+### Vending machine
+[]($video.siteAsset('art/vending-machine.mp4').id('vending-machine'))
+
+### Banguana
+[]($video.siteAsset('art/banguana.mp4').id('banguana'))
+
+### How i sit on chair
+[]($image.siteAsset('art/how-i-sit.png').id('how-i-sit'))
+
+### Protty
+[]($image.siteAsset('art/protty.jpg').id('protty'))
