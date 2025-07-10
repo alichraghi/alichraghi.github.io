@@ -1,0 +1,85 @@
+<extend template="base.shtml">
+<title id="title" :text="$page.title"></title>
+<head id="head">
+  <style>
+    #gallery-panel {
+        column-count: 3;
+        grid-gap: 15px;
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      #gallery-panel {
+        column-count: 1;
+      }
+    }
+
+    #gallery-panel > div {
+      width: 100%;
+      margin: 0 15px 15px 0;
+      display: block;
+      break-inside: avoid;
+      border: 1px solid #abff4b;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body id="body">
+  <h1 :text="$page.title"></h1>
+  <div :html="$page.content()"></div>
+
+  <div id="gallery-panel">
+    <div>
+        <img src="$site.asset('art/king-bd2.jpg').link()">
+        <div class="desc">King's birthday gift 2</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/demon-slayer.png').link()">
+        <div class="desc">Demon slayer</div>
+    </div>
+    <div>
+        <video><source src="$site.asset('art/vending-machine.mp4').link()"></video>
+        <div class="desc">Vending machine</div>
+    </div>
+    <div>
+        <video><source src="$site.asset('art/banguana.mp4').link()"></video>
+        <div class="desc">Banguana</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/kimia-cat.png').link()">
+        <div class="desc">Cat</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/mohgwyn.png').link()">
+        <div class="desc">Mohgwyn pixel art</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/soul-of-cinder-wip.jpg').link()">
+        <div class="desc">Soul of Cinder WIP</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/pfp.png').link()">
+        <div class="desc">Profile picture</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/yuji.jpg').link()">
+        <div class="desc">Yuji</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/king-bd1.png').link()">
+        <div class="desc">King's birthday gift 1</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/how-i-sit.png').link()">
+        <div class="desc">How i sit on chair</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/protty.jpg').link()">
+        <div class="desc">Protty</div>
+    </div>
+  </div>
+</body>
