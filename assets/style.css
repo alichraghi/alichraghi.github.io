@@ -1,85 +1,95 @@
 @font-face {
-  font-family: JetBrains Mono;
-  src: url('JetBrainsMono.woff2') format('woff2');
+    font-family: JetBrains Mono;
+    src: url("JetBrainsMono.woff2") format("woff2");
 }
 
 b,
 strong {
-  color: #fff;
+    color: #fff;
 }
 
 a {
-  color: #abff4b;
+    color: #abff4b;
 }
 
 p {
-  text-align: justify;
-  margin: 5pt 0;
+    text-align: justify;
+    margin: 5pt 0;
 }
 
 html {
-  color: #ccc;
-  font-family: sans-serif;
-  font-size: 1.2em;
-  line-height: 1.4;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #000a00;
+    color: #ccc;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000a00;
 }
 
 body {
-  width: 800px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
+    width: 960px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 #site-title {
-  text-align: center;
+    text-align: center;
 }
 
 #site-title > h1 {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 1.2em;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 footer {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer hr {
-  width: 100%;
+    width: 100%;
 }
 
-img, video {
-  display: block;
-  margin: auto;
-  max-width: 100%;
+img,
+video {
+    display: block;
+    margin: auto;
+    max-width: 100%;
 }
 
-pre, code {
-  white-space: pre-wrap;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: initial;
+pre {
+    overflow-x: auto;
+    font-family: "JetBrains Mono", monospace;
+    font-size: initial;
+}
+
+code {
+    font-family: "JetBrains Mono", monospace;
+    font-size: initial;
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: auto;
+    vertical-align: bottom;
 }
 
 #pfp {
-  height: 100px;
+    height: 100px;
 }
 
 #content {
-  align-self: center;
-  box-sizing: border-box;
-  max-width: min(800px, 100vw);
+    align-self: center;
+    box-sizing: border-box;
+    max-width: min(800px, 100vw);
 }
