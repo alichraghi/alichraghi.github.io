@@ -34,8 +34,28 @@
 
   <div id="gallery-panel">
     <div>
-        <img src="$site.asset('art/king-bd2.jpg').link()">
-        <div class="desc">King's birthday gift 2</div>
+        <img src="$site.asset('art/monk.jpg').link()">
+        <div class="desc">Corrupted Monk</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/steampunk.jpg').link()">
+        <div class="desc">SteamPunky Room</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/monsters_and_wolf.jpg').link()">
+        <div class="desc">Monsters and Wolf</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/girl.jpg').link()">
+        <div class="desc">girl</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/bonfire.jpg').link()">
+        <div class="desc">Bonfire</div>
+    </div>
+    <div>
+        <img src="$site.asset('art/hunter.jpg').link()">
+        <div class="desc">Bloodborne Hunter</div>
     </div>
     <div>
         <img src="$site.asset('art/demon-slayer.png').link()">
@@ -72,10 +92,6 @@
     <div>
         <img src="$site.asset('art/king-bd1.png').link()">
         <div class="desc">King's birthday gift 1</div>
-    </div>
-    <div>
-        <img src="$site.asset('art/how-i-sit.png').link()">
-        <div class="desc">How i sit on chair</div>
     </div>
     <div>
         <img src="$site.asset('art/protty.jpg').link()">
