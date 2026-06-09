@@ -5,7 +5,7 @@
 <body id="body">
     <img src="$site.asset('art/pfp.png').link()" id="pfp">
     <p class="text-center">
-      Independent software developer and team member at the
+      Independent software developer and team member of the
       <a href="https://ziglang.org">Zig</a> programming language.
     </p>
   <div :html="$page.content()"></div>
