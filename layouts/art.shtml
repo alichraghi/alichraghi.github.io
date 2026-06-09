@@ -89,13 +89,5 @@
         <img src="$site.asset('art/yuji.jpg').link()">
         <div class="desc">Yuji</div>
     </div>
-    <div>
-        <img src="$site.asset('art/king-bd1.png').link()">
-        <div class="desc">King's birthday gift 1</div>
-    </div>
-    <div>
-        <img src="$site.asset('art/protty.jpg').link()">
-        <div class="desc">Protty</div>
-    </div>
   </div>
 </body>

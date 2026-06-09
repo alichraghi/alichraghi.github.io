@@ -3,10 +3,15 @@
 <head id="head">
 </head>
 <body id="body">
+    <img src="$site.asset('art/pfp.png').link()" id="pfp">
+    <p class="text-center">
+      Independent software developer and team member at the
+      <a href="https://ziglang.org">Zig</a> programming language.
+    </p>
   <div :html="$page.content()"></div>
   <div>
-    <h2>Posts</h2>
-    <div :loop="$page.subpages()">
+    <h2>Blog Posts</h2>
+    <div :loop="$site.pages('blog/zig-gpu')">
       <span class="date" :text="$loop.it.date.format('January 02, 2006')"></span>
       <a class="title" href="$loop.it.link()">
         <h3 :text="$loop.it.title"></h3>

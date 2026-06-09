@@ -93,3 +93,7 @@ code {
     box-sizing: border-box;
     max-width: min(800px, 100vw);
 }
+
+.text-center {
+    text-align: center;
+}
