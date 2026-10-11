@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head id="head">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,18 +15,30 @@
     <super>
   </head>
   <body id="body">
-    <div id="site-title">
-      <h1 :text="$site.title"></h1>
-    </div>
-    <nav>
-      <a href="$site.page('').link()">Home</a>
-      &nbsp; • &nbsp;
-      <a href="$site.page('art').link()">Art</a>
-      &nbsp; • &nbsp;
-      <a href="$site.page('donate').link()">Donate</a>
-    </nav>
-    <super>
+    <header class="site-header">
+      <div id="site-title"><a href="$site.index().link()" :text="$site.title"></a></div>
+      <nav aria-label="Main navigation">
+        <a href="$site.page('blog').link()">Writing</a>
+        <a href="$site.page('art').link()">Art</a>
+        <a href="$site.page('donate').link()">Donate</a>
+      </nav>
+    </header>
+    <main id="main"><super></main>
     <footer>
+      <div class="buttons" aria-label="Web buttons">
+        <a href="https://www.blender.org/">
+            <img src="$site.asset('buttons/blender-get.gif').link()" width="88" height="31" alt="Get Blender">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Reza_Pahlavi">
+            <img src="$site.asset('buttons/iran.png').link()" width="88" height="31" alt="Iran - Lion and Sun flag">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Islamophobia">
+            <img src="$site.asset('buttons/anti-islam.png').link()"
+                 width="88" height="31"
+                 alt="Crossed-out crescent and star beside a crossed-out Islamic Republic emblem">
+        </a>
+      </div>
+      <a href="$site.index().alternative('rss').link()">RSS</a>
     </footer>
   </body>
 </html>

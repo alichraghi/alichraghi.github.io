@@ -5,7 +5,7 @@
     <description :text="$site.title"></description>
     <language>en-US</language>
     <lastBuildDate :text="$build.generated.formatHTTP()"></lastBuildDate>
-    <ctx :loop="$page.subpages()">
+    <ctx :loop="$site.page('blog').subpages()">
       <item>
         <title :text="$loop.it.title"></title>
         <description :text="$loop.it.content()"></description>

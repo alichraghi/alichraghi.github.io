@@ -1,16 +1,16 @@
 ---
 .title = "Zig and GPUs",
-.date = @date("2025-04-17T00:00:00"),
-.author = "Ali Cheraghi",
+.date = .date("2025-04-17T00:00:00"),
+.authors = ["Ali Cheraghi"],
 .layout = "post.shtml",
 .draft = false,
---- 
+---
 
 GPU programming used to mean wrangling C++ compilers, bloated SDKs, and vendor-specific toolchains.
 That’s changing. You can now write GPU code in modern languages like [Rust](https://rust-gpu.github.io/) and [Zig](https://ziglang.org) with fewer layers.
 This post walks through the current state of Zig's GPU backends and how they stack up across Vulkan, OpenCL, and native ISAs.
 
-### SPIR-V, PTX and AMDGCN
+# SPIR-V, PTX and AMDGCN
 
 Zig’s GPU backend support has been steadily evolving.
 After [roughly 4 years](https://github.com/ziglang/zig/pull/7827), the self-hosted SPIR-V backend
@@ -25,7 +25,7 @@ This opens the door to writing high-performance GPU code without needing to touc
 
 For a complete example, checkout [snektron/shallenge](http://github.com/snektron/shallenge/).
 
-### Vulkan vs. OpenCL
+# Vulkan vs. OpenCL
 
 Today, Vulkan and OpenCL are the two major SPIR-V environments — but they diverge in a few aspects.
 in OpenCL, capabilities like `Kernel` and `Addresses` are guaranteed to be available.
@@ -36,7 +36,7 @@ of [Zig's behavior tests](https://github.com/ziglang/zig/tree/master/test/behavi
 `~75%` for the OpenCL target. Note that these numbers are not expected to get
 significantly higher since a lot of these tests are not meant to be working in GPUs anyway.
 
-### Challenges
+# Challenges
 
 One core challenge in targeting SPIR-V from a general-purpose language like Zig is the need to
 explicitly specify address spaces (a.k.a. storage classes). Zig supports this via the `addrspace` keyword,
@@ -50,7 +50,7 @@ can be mapped directly to Zig's `@builtin`s target-specific instructions when av
 However, subtle differences exist. For example, unlike Zig or OpenCL,
 some Vulkan instructions (`fma`, `sqrt`, `exp`, `log`) do *NOT* guarantee correctly rounded results.
 
-### What's next?
+# What's next?
 
 - Composite integers
 - `spirv-val` should never fail on a binary emitted by Zig. As Zen says, "Compile errors are better than runtime crashes".
