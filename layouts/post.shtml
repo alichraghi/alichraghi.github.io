@@ -1,29 +1,10 @@
 <extend template="base.shtml">
 <title id="title" :text="$page.title"></title>
-<head id="head">
-  <style>
-    #prev-next {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     margin-top: 40px;
-    }
-
-    figure {
-      align-self: center;
-      text-align: center;
-      font-style: italic;
-    }
-
-    .post {
-      display:flex;
-      flex-direction: column;
-    }
-  </style>
-</head>
-<body id="body">
+<head id="head"></head>
+<main id="main">
   <div id="content">
     <h1 :text="$page.title"></h1>
+    <time class="post-date" datetime="$page.date.format('2006-01-02')" :text="$page.date.format('January 02, 2006')"></time>
     <div class="post" :html="$page.content()"></div>
     <div id="prev-next">
       <div :if="$page.prevPage?()">
@@ -40,4 +21,4 @@
       </div>
     </div>
   </div>
-</body>
+</main>

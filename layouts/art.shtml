@@ -1,34 +1,7 @@
 <extend template="base.shtml">
 <title id="title" :text="$page.title"></title>
-<head id="head">
-  <style>
-    #gallery-panel {
-        column-count: 3;
-        grid-gap: 15px;
-        width: 100%;
-    }
-
-    @media (max-width: 600px) {
-      #gallery-panel {
-        column-count: 1;
-      }
-    }
-
-    #gallery-panel > div {
-      width: 100%;
-      margin: 0 15px 15px 0;
-      display: block;
-      break-inside: avoid;
-      border: 1px solid #abff4b;
-    }
-
-    div.desc {
-      padding: 15px;
-      text-align: center;
-    }
-  </style>
-</head>
-<body id="body">
+<head id="head"></head>
+<main id="main">
   <h1 :text="$page.title"></h1>
   <div :html="$page.content()"></div>
 
@@ -70,7 +43,7 @@
         <div class="desc">Banguana</div>
     </div>
     <div>
-        <img src="$site.asset('art/kimia-cat.png').link()">
+        <img src="$site.asset('art/cat.png').link()">
         <div class="desc">Cat</div>
     </div>
     <div>
@@ -90,4 +63,4 @@
         <div class="desc">Yuji</div>
     </div>
   </div>
-</body>
+</main>

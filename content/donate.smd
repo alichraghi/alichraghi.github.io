@@ -1,7 +1,7 @@
 ---
 .title = "Donate",
-.date = @date("2025-04-16T00:00:00"),
-.author = "Ali Cheraghi",
+.date = .date("2025-04-16T00:00:00"),
+.authors = ["Ali Cheraghi"],
 .layout = "page.shtml",
 .draft = false,
 ---
@@ -9,12 +9,14 @@
 If you like my work, please consider donating to one of these addreses!
 Don't hesitate to reach me out via [email](mailto:alichraghi@proton.me) or
 by the `alichraghi` username in discord and telegram to let me know who you are or
-if you have any questions!
+if you have any questions like not finding your preferred crypto-currency :P
 
-### Monero
-`43S2tCrmsURechR5n1jdGyRG951roMReZNdvGYX9V1T5huT2dgM9JLKCCCXpNXox2BFz3HsScDDQeLLTbPSrxYX8HRvwCSW`
+# Monero
+```
+43S2tCrmsURechR5n1jdGyRG951roMReZNdvGYX9V1T5huT2dgM9JLKCCCXpNXox2BFz3HsScDDQeLLTbPSrxYX8HRvwCSW
+```
 
-### USDT (BEP20)
-`0x55948246A13181863b4Db18330f87438Fb403b26`
-
-### Contact me if you couldn't find your preferred crypto-currency.
+# USDT (BEP20)
+```
+0x55948246A13181863b4Db18330f87438Fb403b26
+```

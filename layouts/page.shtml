@@ -1,17 +1,9 @@
 <extend template="base.shtml">
 <title id="title" :text="$page.title"></title>
-<head id="head">
-  <style>
-    .date {
-      font-size: 0.9em;
-    }
-    
-    .title h3{
-      margin-top: 0;
-    }
-  </style>
-</head>
-<body id="body">
-  <h1 :text="$page.title"></h1>
-  <div :html="$page.content()"></div>
-</body>
+<head id="head"></head>
+<main id="main">
+  <div class="page-content">
+    <h1 :text="$page.title"></h1>
+    <div :html="$page.content()"></div>
+  </div>
+</main>

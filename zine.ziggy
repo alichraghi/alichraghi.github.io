@@ -1,4 +1,6 @@
-Site {
+.zine_version = "0.14.0",
+.supermd = .{ .headings_h2 = true },
+.site = .simple(.{
     .title = "Ali Cheraghi",
     .host_url = "https://alichraghi.github.io",
     .content_dir_path = "content",
@@ -9,4 +11,4 @@ Site {
         "JetBrainsMono.woff2",
         "favicon.ico",
     ],
-}
+}),
