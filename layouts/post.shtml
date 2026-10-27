@@ -1,6 +1,10 @@
 <extend template="base.shtml">
 <title id="title" :text="$page.title"></title>
-<head id="head"></head>
+<head id="head">
+  <ctx :if="$page.custom.getOr('visibility', 'public').eql('unlisted')">
+    <meta name="robots" content="noindex">
+  </ctx>
+</head>
 <main id="main">
   <div id="content">
     <h1 :text="$page.title"></h1>
@@ -8,16 +12,20 @@
     <div class="post" :html="$page.content()"></div>
     <div id="prev-next">
       <div :if="$page.prevPage?()">
-        <a href="$if.link()">
-          ←
-          <span :text="$if.title"></span>
-        </a>
+        <ctx :if="$if.custom.getOr('visibility', 'public').eql('unlisted').not()">
+          <a href="$if.link()">
+            ←
+            <span :text="$if.title"></span>
+          </a>
+        </ctx>
       </div>
       <div :if="$page.nextPage?()">
-        <a href="$if.link()">
-          <span :text="$if.title"></span>
-          →
-        </a>
+        <ctx :if="$if.custom.getOr('visibility', 'public').eql('unlisted').not()">
+          <a href="$if.link()">
+            <span :text="$if.title"></span>
+            →
+          </a>
+        </ctx>
       </div>
     </div>
   </div>

@@ -23,7 +23,14 @@
         <a href="$site.page('donate').link()">Donate</a>
       </nav>
     </header>
-    <main id="main"><super></main>
+    <main id="main">
+      <ctx :if="$page.custom.getOr('visibility', 'public').eql('unlisted')">
+        <aside class="unlisted-notice" aria-label="Unlisted page notice">
+          <strong>This page is unlisted.</strong> I'm trusting you not to share it with anyone.
+        </aside>
+      </ctx>
+      <super>
+    </main>
     <footer>
       <div class="buttons" aria-label="Web buttons">
         <a href="https://www.blender.org/">

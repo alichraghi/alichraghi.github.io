@@ -3,6 +3,7 @@
   color-scheme: dark;
   --bg: #111111; --text: #e1e1dd; --muted: #aaa9a3;
   --link: #e1e1dd; --visited: #c4a9de; --line: #4b4b47; --surface: #242424; --string: #c4ba9b;
+  --notice-bg: #30290c; --notice-text: #fef08a; --notice-border: #eab308;
   --font: 15px/1.7 ui-monospace, "Liberation Mono", monospace;
 }
 
@@ -12,6 +13,7 @@
     --bg: #fafafa; --text: #242424; --muted: #62625d;
     --link: #242424; --visited: #754b91; --line: #cecec8;
     --surface: #eeeeeb; --string: #79592c;
+    --notice-bg: #fef9c3; --notice-text: #713f12; --notice-border: #ca8a04;
   }
 }
 * { box-sizing: border-box; }
@@ -26,6 +28,7 @@ h1 { margin: 0 0 12px; }
 h2 { margin-top: 32px; }
 p { margin: 0 0 22px; }
 main { min-width: 0; }
+.unlisted-notice { margin-bottom: 28px; padding: 16px; border-left: 2px solid var(--notice-border); background: var(--notice-bg); color: var(--notice-text); font-size: 0.85rem; }
 nav, #social-links { display: flex; flex-wrap: wrap; gap: 8px 16px; }
 .date, .post-date, footer { color: var(--muted); font-size: 0.8rem; }
 .post-date { display: block; margin-bottom: 28px; }
