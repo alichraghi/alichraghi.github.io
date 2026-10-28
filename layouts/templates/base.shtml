@@ -11,6 +11,7 @@
     <script defer src="$site.asset('temml.min.js').link()"></script>
     <script defer src="$site.asset('render-mathtex.js').link()"></script>
     <!-- /mathtex -->
+    <link rel="me" href="https://hachyderm.io/@alic">
     <script data-goatcounter="https://ali.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <super>
   </head>
@@ -39,7 +40,7 @@
               <img src="$site.asset('buttons/blender-get.gif').link()" width="88" height="31" alt="Get Blender">
             </picture>
         </a>
-        <a href="https://en.wikipedia.org/wiki/Reza_Pahlavi">
+        <!--<a href="https://en.wikipedia.org/wiki/Reza_Pahlavi">
             <picture>
               <source media="(prefers-reduced-motion: reduce)">
               <img src="$site.asset('buttons/iran.gif').link()" width="88" height="31" alt="Free Iran - Lion and Sun flag">
@@ -52,7 +53,7 @@
                  width="88" height="31"
                  alt="Crossed-out crescent and star beside a crossed-out Islamic Republic emblem">
             </picture>
-        </a>
+        </a>-->
       </div>
       <a href="$site.index().alternative('rss').link()">RSS</a>
     </footer>
