@@ -1,0 +1,32 @@
+<extend template="base.shtml">
+<title id="title" :text="$page.title"></title>
+<head id="head">
+  <ctx :if="$page.custom.getOr('visibility', 'public').eql('unlisted')">
+    <meta name="robots" content="noindex">
+  </ctx>
+</head>
+<main id="main">
+  <div id="content">
+    <h1 :text="$page.title"></h1>
+    <time class="post-date" datetime="$page.date.format('2006-01-02')" :text="$page.date.format('January 02, 2006')"></time>
+    <div class="post" :html="$page.content()"></div>
+    <div id="prev-next">
+      <div :if="$page.prevPage?()">
+        <ctx :if="$if.custom.getOr('visibility', 'public').eql('unlisted').not()">
+          <a href="$if.link()">
+            ←
+            <span :text="$if.title"></span>
+          </a>
+        </ctx>
+      </div>
+      <div :if="$page.nextPage?()">
+        <ctx :if="$if.custom.getOr('visibility', 'public').eql('unlisted').not()">
+          <a href="$if.link()">
+            <span :text="$if.title"></span>
+            →
+          </a>
+        </ctx>
+      </div>
+    </div>
+  </div>
+</main>

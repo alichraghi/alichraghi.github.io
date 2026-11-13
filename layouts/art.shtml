@@ -1,0 +1,66 @@
+<extend template="base.shtml">
+<title id="title" :text="$page.title"></title>
+<head id="head"></head>
+<main id="main">
+  <h1 :text="$page.title"></h1>
+  <div :html="$page.content()"></div>
+
+  <div id="gallery-panel">
+    <figure>
+      <img src="$site.asset('art/monk.avif').link()" width="959" height="1279" alt="">
+      <figcaption>Corrupted Monk</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('art/steampunk.avif').link()" width="1280" height="720" alt="">
+      <figcaption>SteamPunky Room</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('art/monsters_and_wolf.avif').link()" width="1124" height="1279" alt="" loading="lazy">
+      <figcaption>Monsters and Wolf</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('art/girl.avif').link()" width="1280" height="1280" alt="" loading="lazy">
+      <figcaption>girl</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('art/bonfire.avif').link()" width="1280" height="720" alt="" loading="lazy">
+      <figcaption>Bonfire</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('art/hunter.avif').link()" width="959" height="1008" alt="" loading="lazy">
+      <figcaption>Bloodborne Hunter</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('art/demon-slayer.avif').link()" width="1002" height="703" alt="" loading="lazy">
+      <figcaption>Demon slayer</figcaption>
+    </figure>
+    <figure>
+      <video controls preload="none" width="1920" height="1080" aria-label="Vending machine"><source src="$site.asset('art/vending-machine.mp4').link()" type="video/mp4"></video>
+      <figcaption>Vending machine</figcaption>
+    </figure>
+    <figure>
+      <video controls preload="none" width="1920" height="1080" aria-label="Banguana"><source src="$site.asset('art/banguana.mp4').link()" type="video/mp4"></video>
+      <figcaption>Banguana</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('art/cat.avif').link()" width="575" height="866" alt="" loading="lazy">
+      <figcaption>Cat</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('art/mohgwyn.avif').link()" width="512" height="512" alt="" loading="lazy">
+      <figcaption>Mohgwyn pixel art</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('art/soul-of-cinder-wip.avif').link()" width="1280" height="960" alt="" loading="lazy">
+      <figcaption>Soul of Cinder WIP</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('art/pfp.avif').link()" width="905" height="835" alt="" loading="lazy">
+      <figcaption>Profile picture</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('art/yuji.avif').link()" width="1836" height="4080" alt="" loading="lazy">
+      <figcaption>Yuji</figcaption>
+    </figure>
+  </div>
+</main>

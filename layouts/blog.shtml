@@ -1,0 +1,16 @@
+<extend template="base.shtml">
+<title id="title" :text="$page.title"></title>
+<head id="head"></head>
+<main id="main">
+  <h1 :text="$page.title"></h1>
+  <div class="post-list">
+    <div class="post-entries" :loop="$page.subpages()">
+      <ctx :if="$loop.it.custom.getOr('visibility', 'public').eql('unlisted').not()">
+        <a class="post-entry" href="$loop.it.link()">
+          <time class="date" datetime="$loop.it.date.format('2006-01-02')" :text="$loop.it.date.format('January 02, 2006')"></time>
+          <h2 :text="$loop.it.title"></h2>
+        </a>
+      </ctx>
+    </div>
+  </div>
+</main>

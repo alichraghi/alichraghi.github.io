@@ -1,0 +1,54 @@
+<extend template="base.shtml">
+<title id="title" :text="$page.title"></title>
+<head id="head"></head>
+<main id="main">
+  <h1 :text="$page.title"></h1>
+  <div :html="$page.content()"></div>
+
+  <div id="gallery-panel">
+    <figure>
+      <img src="$site.asset('gallery/cat0.avif').link()" width="3000" height="4000" alt="A tabby cat standing on a keyboard in front of a monitor" fetchpriority="high">
+      <figcaption>Cat 0</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('gallery/cat1.avif').link()" width="3000" height="4000" alt="A tabby cat lying beside a person on a patterned rug">
+      <figcaption>Cat 1</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('gallery/cat2.avif').link()" width="2388" height="3184" alt="A cat close to the camera with a person behind it" loading="lazy">
+      <figcaption>Cat 2</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('gallery/cat3.avif').link()" width="2560" height="1920" alt="A sleeping tabby cat resting on a person’s arm" loading="lazy">
+      <figcaption>Cat 3</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('gallery/cat4.avif').link()" width="2560" height="2560" alt="A tabby cat sleeping on a keyboard" loading="lazy">
+      <figcaption>Cat 4</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('gallery/milad-tower.avif').link()" width="1920" height="2560" alt="Traffic at dusk with Milad Tower in the distance" loading="lazy">
+      <figcaption>Milad Tower</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('gallery/no-power.avif').link()" width="2560" height="1920" alt="A dark residential street at night with only a few lights" loading="lazy">
+      <figcaption>No power</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('gallery/cat-bike.avif').link()" width="2560" height="1920" alt="Two cats resting on a red motorcycle" loading="lazy">
+      <figcaption>Cat bike</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('gallery/zeus.avif').link()" width="1920" height="2560" alt="A dark-colored dog resting its head on a person’s arm" loading="lazy">
+      <figcaption>Zeus</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('gallery/converse-panting.avif').link()" width="2560" height="1441" alt="Black Converse shoes decorated with painted designs" loading="lazy">
+      <figcaption>Converse painting</figcaption>
+    </figure>
+    <figure>
+      <img src="$site.asset('gallery/butterfly.avif').link()" width="1920" height="2560" alt="A white butterfly with dark markings resting on a hand" loading="lazy">
+      <figcaption>Butterfly</figcaption>
+    </figure>
+  </div>
+</main>
