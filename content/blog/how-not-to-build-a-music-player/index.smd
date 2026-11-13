@@ -4,7 +4,6 @@
 .authors = ["Ali Cheraghi"],
 .layout = "post.shtml",
 .draft = false,
-.custom = .{ .visibility = "unlisted" },
 ---
 
 The [Twelve-Day War](https://en.wikipedia.org/wiki/Twelve-Day_War) made me realize online music players aren't
