@@ -4,7 +4,6 @@
 <main id="main">
   <h1 :text="$page.title"></h1>
   <div :html="$page.content()"></div>
-
   <div id="gallery-panel">
     <figure>
       <img src="$site.asset('gallery/cat0.avif').link()" width="3000" height="4000" alt="A tabby cat standing on a keyboard in front of a monitor" fetchpriority="high">
