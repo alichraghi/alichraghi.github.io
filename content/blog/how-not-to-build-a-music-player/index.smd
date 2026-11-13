@@ -67,7 +67,7 @@ Btw this is how [AMP](https://codeberg.org/alichraghi/amp) looks like right now!
 
 [v0.1](<$image.asset("v0.1-release.avif").alt("AMP v0.1 showing a music library, playback controls, and lyrics.").size(800,628)>)
 
-Blur shader is written in Zig based on [this blog post](https://fgiesen.wordpress.com/2012/07/30/fast-blurs-1/).
+Worth mentioning that the blur shader is written in Zig based on [this excellent blog post!](https://fgiesen.wordpress.com/2012/07/30/fast-blurs-1/).
 
 Roadmap to v1.0:
 - Music server
