@@ -17,11 +17,13 @@ discovered [Strawberry](https://www.strawberrymusicplayer.org/). It's a feature-
 me happy for quite a while, but I have this habit of looking at song lyrics and singing along!
 Strawberry fetches lyrics from the internet when it recognizes a song, but sometimes the lyrics weren't line-synced
 and worse, it displayed the timestamps next to the lyrics which I found pretty annoying to look at.
+I wasn't aware of other music players such as [foobar2000](https://www.foobar2000.org/) which my friend just pointed me
+to while writing this post.
 
-I decided to write my own player and call it [AMP](https://codeberg.org/alichraghi/amp) with a few goals in mind:
-no C++ dependencies, proper system integration to make it feel like a native app, and of course, using Zig as the shading language.
-I also wanted to roll my own UI because of the fun memories of working on [V's UI](https://github.com/vlang/ui)
-during my first days of being introduced into system programming.
+I decided to write my own music player and call it [AMP](https://codeberg.org/alichraghi/amp) with a few goals in mind:
+minimal feature-set, no C++ dependencies, proper system integration to make it feel like a native app, and of course,
+write it in Zig (including the shaders!). I also wanted to roll my own UI because of the fun memories of working
+on [V's UI](https://github.com/vlang/ui) during my first days of being introduced into system programming.
 But before I could make any meaningful progress, a new wave of protests started.
 Following the tragedy of [January 8 and 9](https://en.wikipedia.org/wiki/2025%E2%80%932026_Iranian_protests),
 another internet blackout began, lasting more than four months.
@@ -34,7 +36,7 @@ out of it. I ended up spending hundreds of dollars on these services and other m
 my friends and keep my hobbies alive. Killing time was becoming a problem. Especially for someone like me who built
 their entire social life online.
 
-I carefully used this slow connection to download repositories, documentions, etc. to continue working on my music player.
+I carefully used this slow connection to download repositories, documention, etc. to continue working on my music player.
 It really brought me immense joy during this hard time.
 
 [Screenshot from 2026/5/25](<$image.asset("public-release.avif").alt("An early dark-themed AMP interface showing a music library and synchronized lyrics.").size(1089,687)>)
@@ -43,7 +45,7 @@ Once the connection was mostly restored to the pre-blackout days (UDP traffic is
 which naturally also affects QUIC), my attention was shifted towards LLMs. It had become very hard for me to ignore
 the hype and progress around frontier LLMs. As I really never thought about using them seriously for coding.
 They are still everywhere in the news, and I was just reminded that I owned a *Claude Max 20x* subscription gift from my
-boss back in 2025. Eating dust and maybe soon expiring. So I decided to give it a try to add features to my player.
+boss back in 2025. Eating dust and maybe soon expiring. So I decided to give it a try and experiment on my music player.
 It was a very addictive experience. I literally couldn't hit the plan limits no matter how hard I tried,
 so after a few non-stop days of prompting, a good chunk of [AMP](https://codeberg.org/alichraghi/amp) was vibecoded..
 
@@ -64,6 +66,8 @@ For now and hopefully forever I think I'll be going the old school way. Never ru
 Btw this is how [AMP](https://codeberg.org/alichraghi/amp) looks like right now!
 
 [v0.1](<$image.asset("v0.1-release.avif").alt("AMP v0.1 showing a music library, playback controls, and lyrics.").size(800,628)>)
+
+Blur shader is written in Zig based on [this blog post](https://fgiesen.wordpress.com/2012/07/30/fast-blurs-1/).
 
 Roadmap to v1.0:
 - Music server
