@@ -6,7 +6,7 @@
     <img src="$site.asset('art/pfp.avif').link()" id="pfp" width="905" height="835" alt="Ali Cheraghi's profile artwork">
     <div>
       <h1>Ali Cheraghi</h1>
-      <p>Independent software developer and team member of the <a href="https://ziglang.org">Zig</a> programming language.</p>
+      <p>Software developer and team member of the <a href="https://ziglang.org">Zig</a> programming language.</p>
       <div id="social-links">
         <a href="mailto:alichraghi@proton.me">Email</a>
         <a href="https://codeberg.org/alichraghi">Codeberg</a>
